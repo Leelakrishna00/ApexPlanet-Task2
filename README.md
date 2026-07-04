@@ -1,77 +1,87 @@
 # ApexPlanet Internship - Task 2
 
-## 📌 Task Name
-Task 2 - Intermediate HTML, CSS & JavaScript
+## Task Name
 
-## 📖 Description
-This project was developed as part of the ApexPlanet Web Development Internship. It demonstrates intermediate front-end development concepts by combining HTML, CSS, and JavaScript to build a responsive dashboard with a contact form, form validation, a dynamic task manager, and an interactive image gallery.
+Intermediate HTML, CSS and JavaScript
 
-## 🎯 Objectives
-- Build a contact form using HTML and CSS.
+## Project Description
+
+This project was developed as part of the ApexPlanet Web Development Internship. It focuses on intermediate front-end development concepts by combining HTML, CSS, and JavaScript to create a responsive dashboard with interactive components.
+
+## Objective
+
+- Create a contact form.
 - Validate user input using JavaScript.
-- Create a responsive layout using Flexbox and CSS Grid.
-- Develop dynamic components using JavaScript.
+- Build responsive layouts using Flexbox and CSS Grid.
+- Develop dynamic web components.
 
-## ✨ Features
+## Features
 
-### 📧 Contact Form
-- Full Name field
-- Email field
-- Message field
-- Client-side validation
+### Contact Form
+
+- Name, Email and Message fields
+- JavaScript form validation
 - Success and error messages
 
-### ✅ Task Manager
+### Task Manager
+
 - Add new tasks
 - Mark tasks as completed
 - Delete tasks
 - Task priority selection
-- Empty-state message
 
-### 🖼 Dynamic Image Gallery
+### Image Gallery
+
 - Add images using URL
 - Upload local images
-- Add captions
-- Remove images dynamically
+- Add image captions
+- Remove images
 
-### 📱 Responsive Design
-- Flexbox Navigation
-- CSS Grid Dashboard
-- Mobile Friendly Layout
-- Tablet Responsive Design
+### Responsive Design
 
-## 🛠 Technologies Used
+- Flexbox layout
+- CSS Grid layout
+- Mobile-friendly interface
+
+## Technologies Used
+
 - HTML5
 - CSS3
-- JavaScript (ES6)
+- JavaScript
 
-## 📂 Project Structure
+## Project Structure
 
+```
 ApexPlanet-Task2/
 │── index.html
 │── style.css
 │── script.js
 │── README.md
+│── screenshots/
+```
 
-## 🚀 Learning Outcomes
-- HTML Form Design
-- CSS Flexbox
-- CSS Grid
-- Responsive Web Design
-- DOM Manipulation
-- Form Validation
-- Dynamic Element Creation
-- JavaScript Event Handling
+## How to Run
 
-## 📸 Output
-A responsive dashboard featuring a validated contact form, an interactive task manager, and a dynamic image gallery.
+1. Download or clone the repository.
+2. Open the project folder.
+3. Open `index.html` in your web browser.
 
-## 👨‍💻 Author
-Leela Krishna
+## Learning Outcomes
 
-B.Tech CSE
+- Improved JavaScript programming skills.
+- Learned form validation.
+- Practiced DOM manipulation.
+- Built responsive layouts using Flexbox and Grid.
+- Developed interactive web components.
 
-Mohan Babu University
+## Future Improvements
 
-## 🏢 Internship
+- Store tasks using Local Storage.
+- Improve form validation.
+- Add image categories.
+- Enhance accessibility.
+
+
 ApexPlanet Software Pvt. Ltd.
+
+45 Days Web Development Internship
