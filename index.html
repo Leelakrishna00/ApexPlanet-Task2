@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vesper Dynamics - Interactive System Panel</title>
+    <!-- Google Fonts: Outfit and Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Flexbox Navigation Bar -->
+    <header class="app-header">
+        <div class="container header-container">
+            <div class="logo">
+                <span class="logo-accent">Vesper</span>Dynamics
+            </div>
+            <nav class="main-nav">
+                <a href="#form-section" class="nav-link">Contact</a>
+                <a href="#todo-section" class="nav-link">Tasks</a>
+                <a href="#gallery-section" class="nav-link">Gallery</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area with CSS Grid Layout -->
+    <main class="container">
+        <div class="dashboard-grid">
+            
+            <!-- Grid Card 1: Contact Form Section -->
+            <section class="dashboard-card" id="form-section">
+                <div class="card-header">
+                    <span class="card-badge">Secure Portal</span>
+                    <h2>Request Connection</h2>
+                    <p>Submit your details to establish secure system communication.</p>
+                </div>
+                
+                <form id="contact-form" class="interactive-form" novalidate>
+                    <div class="form-group">
+                        <label for="user-name">Full Name</label>
+                        <input type="text" id="user-name" name="name" placeholder="John Doe" autocomplete="off">
+                        <span class="error-message" id="name-error">Name is required</span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="user-email">Email Address</label>
+                        <input type="email" id="user-email" name="email" placeholder="john@example.com" autocomplete="off">
+                        <span class="error-message" id="email-error">Please enter a valid email address</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">System Message</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Type your message here..."></textarea>
+                        <span class="error-message" id="message-error">Message cannot be empty</span>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary form-btn">Submit Request</button>
+                    <div id="form-status" class="status-alert"></div>
+                </form>
+            </section>
+
+            <!-- Grid Card 2: To-Do Task Manager Section -->
+            <section class="dashboard-card" id="todo-section">
+                <div class="card-header">
+                    <span class="card-badge">Local Cache</span>
+                    <h2>Task Manager</h2>
+                    <p>Track active sub-routines and clear pending execution items.</p>
+                </div>
+
+                <div class="todo-controls">
+                    <div class="todo-inputs">
+                        <input type="text" id="todo-input" placeholder="New sub-routine..." autocomplete="off">
+                        <select id="todo-priority">
+                            <option value="low">Low Priority</option>
+                            <option value="medium" selected>Medium Priority</option>
+                            <option value="high">High Priority</option>
+                        </select>
+                    </div>
+                    <button id="add-task-btn" class="btn btn-primary">Add Task</button>
+                </div>
+
+                <div class="task-list-container">
+                    <ul id="task-list" class="task-list">
+                        <!-- Tasks added dynamically via JavaScript -->
+                    </ul>
+                    <div id="task-empty-state" class="empty-state">
+                        <p>No active sub-routines. All tasks executed.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Grid Card 3: Dynamic Image Gallery Section -->
+            <section class="dashboard-card gallery-card" id="gallery-section">
+                <div class="card-header">
+                    <span class="card-badge">Media Feed</span>
+                    <h2>Dynamic Gallery</h2>
+                    <p>Register external images to the dashboard visual wall.</p>
+                </div>
+
+                <div class="gallery-controls">
+                    <input type="text" id="gallery-url" placeholder="Image URL..." autocomplete="off">
+                    <input type="text" id="gallery-title" placeholder="Caption..." autocomplete="off">
+                    <input type="file" id="gallery-file" accept="image/*" style="display: none;">
+                    <button id="upload-btn" class="btn btn-secondary" type="button">Upload File</button>
+                    <button id="add-image-btn" class="btn btn-primary" type="button">Add Image</button>
+                </div>
+                
+                <div id="gallery-status" class="status-alert"></div>
+                
+                <div id="gallery-grid" class="gallery-grid">
+                    <!-- Images added dynamically via JavaScript -->
+                </div>
+            </section>
+            
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 Vesper Dynamics. Built with responsive Flexbox & CSS Grid systems.</p>
+            <div class="footer-links">
+                <a href="#" class="footer-link">Security protocols</a>
+                <a href="#" class="footer-link">Documentation</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
