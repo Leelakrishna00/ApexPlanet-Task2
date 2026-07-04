@@ -80,8 +80,3 @@ ApexPlanet-Task2/
 - Improve form validation.
 - Add image categories.
 - Enhance accessibility.
-
-
-ApexPlanet Software Pvt. Ltd.
-
-45 Days Web Development Internship
